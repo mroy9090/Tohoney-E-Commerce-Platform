@@ -1,15 +1,18 @@
-# Force PHP and Blade to be detected as PHP
+# Force PHP and Blade files to be recognized as PHP
 *.php linguist-detectable=true
-*.blade.php linguist-detectable=true
+*.blade.php linguist-language=PHP
+
+# Prioritize PHP files in Laravel
 artisan linguist-detectable=true
 server.php linguist-detectable=true
 
-# Ignore SCSS, CSS, and frontend assets
+# Ignore frontend-related files
 *.scss linguist-vendored
 *.css linguist-vendored
 *.js linguist-vendored
 *.less linguist-vendored
 public/* linguist-vendored
+resources/views/*.blade.php linguist-vendored
 resources/assets/* linguist-vendored
 node_modules/* linguist-vendored
 bootstrap/* linguist-vendored
