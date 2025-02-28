@@ -1,16 +1,17 @@
-# Force GitHub to detect PHP correctly
-
-*.blade.php linguist-language=Blade
+# Force PHP and Blade to be detected as PHP
+*.php linguist-detectable=true
+*.blade.php linguist-detectable=true
 artisan linguist-detectable=true
 server.php linguist-detectable=true
 
-# Ignore frontend-related files
+# Ignore SCSS, CSS, and frontend assets
+*.scss linguist-vendored
 *.css linguist-vendored
-*.html linguist-vendored
 *.js linguist-vendored
+*.less linguist-vendored
 public/* linguist-vendored
+resources/assets/* linguist-vendored
 node_modules/* linguist-vendored
 bootstrap/* linguist-vendored
 storage/* linguist-vendored
 vendor/* linguist-vendored
-
