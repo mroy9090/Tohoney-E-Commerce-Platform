@@ -6,6 +6,7 @@ server.php linguist-detectable=true
 
 # Ignore frontend-related files
 *.css linguist-vendored
+*.html linguist-vendored
 *.js linguist-vendored
 public/* linguist-vendored
 node_modules/* linguist-vendored
