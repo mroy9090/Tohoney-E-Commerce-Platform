@@ -1,6 +1,7 @@
 # Force GitHub to detect PHP correctly
-*.php linguist-detectable=true
-*.blade.php linguist-language=PHP
+
+*.blade.php linguist-language=Blade
+*.php linguist-language=PHP
 
 # Ensure Laravel-specific files count as PHP
 artisan linguist-detectable=true
