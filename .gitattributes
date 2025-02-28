@@ -1,6 +1,6 @@
-*.blade.php linguist-detectable=true
-*.php linguist-detectable=true
-*.css linguist-vendored
-*.js linguist-vendored
+*.blade.php linguist-detectable=laravel
+*.php linguist-detectable=php
+*.css linguist-css
+*.js linguist-js
 public/* linguist-vendored
 node_modules/* linguist-vendored
