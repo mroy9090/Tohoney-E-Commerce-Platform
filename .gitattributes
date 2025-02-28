@@ -1,5 +1,5 @@
 # Force GitHub to detect PHP correctly
-*.php linguist-language=php
+
 *.blade.php linguist-language=Blade
 artisan linguist-detectable=true
 server.php linguist-detectable=true
