@@ -1,5 +1,6 @@
-* text=auto
+*.blade.php linguist-detectable=true
+*.php linguist-detectable=true
 *.css linguist-vendored
-*.scss linguist-vendored
 *.js linguist-vendored
-CHANGELOG.md export-ignore
+public/* linguist-vendored
+node_modules/* linguist-vendored
