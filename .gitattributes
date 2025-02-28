@@ -1,19 +1,22 @@
-# Force PHP and Blade files to be recognized as PHP
-*.php linguist-detectable=true
-*.blade.php linguist-language=PHP
+# Force GitHub to detect PHP correctly
 
-# Prioritize PHP files in Laravel
+*.blade.php linguist-language=BLADE
+
+# Ensure Laravel-specific files count as PHP
 artisan linguist-detectable=true
 server.php linguist-detectable=true
 
-# Ignore frontend-related files
+# Ignore frontend-related files (CSS, SCSS, JS, LESS)
 *.scss linguist-vendored
 *.css linguist-vendored
 *.js linguist-vendored
 *.less linguist-vendored
+*.map linguist-vendored
+
+# Ignore assets and dependencies
 public/* linguist-vendored
-resources/views/*.blade.php linguist-vendored
 resources/assets/* linguist-vendored
+resources/views/*.blade.php linguist-vendored
 node_modules/* linguist-vendored
 bootstrap/* linguist-vendored
 storage/* linguist-vendored
