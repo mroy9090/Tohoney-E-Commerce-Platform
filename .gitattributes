@@ -1,5 +1,15 @@
-* text=auto
+# Force GitHub to detect PHP correctly
+*.php linguist-detectable=true
+*.blade.php linguist-detectable=true
+artisan linguist-detectable=true
+server.php linguist-detectable=true
+
+# Ignore frontend-related files
 *.css linguist-vendored
-*.scss linguist-vendored
 *.js linguist-vendored
-CHANGELOG.md export-ignore
+public/* linguist-vendored
+node_modules/* linguist-vendored
+bootstrap/* linguist-vendored
+storage/* linguist-vendored
+vendor/* linguist-vendored
+
